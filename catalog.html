@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/faicon.svg">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Нёрдс</title>
 </head>
 <body>
-    <header class="main main-catalog">
+    <header class="main">
         <div class="menu">
           <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="logotip" class="logo"></a>
           <ul class="menu-list">
@@ -19,15 +20,14 @@
             <li class="menu-list-items"><a href="#">КОНТАКТЫ</a></li>
           </ul>
           <div class="cart">
-            <img src="img/cart-icon.svg" alt="cart" class="cart-icon">
             <a href="#" class="cart-text">КОРЗИНА</a>
           </div>
-        </div>
-        <div class="main-heading">Магазин готовых шаблонов</div>
+        </div>        
     </header>
     <main>
+      <div class="main-heading">Магазин готовых шаблонов</div>
       <section class="price-list">
-        <div class="product-filter">
+        <form action="#" class="product-filter">       
             <p class="product-filter-text">СТОИМОСТЬ:</p>
             <div class="price-band-box">
               <div class="range-controls">
@@ -60,8 +60,8 @@
                   <li class="product-features-item"><input class="filter-input-checkbox" type="checkbox" id="filter-input-checkbox5"><label for="filter-input-checkbox5" tabindex="0">Корзина</label></li>
               </ul>
             </div>
-            <button class="product-filter-but">ПОКАЗАТЬ</button>
-        </div>
+            <input type="submit" class="product-filter-but" value="ПОКАЗАТЬ">
+        </form>
         <div class="product">
             <div class="product-sorting">
               <p class="product-sorting-heading">СОРТИРОВАТЬ:</p>
@@ -80,7 +80,7 @@
                   <div></div>
                   <div></div>
                 </div>
-                <img src="img/img-sedona.png" width="360" height="580" alt="" class="product-item-img">
+                <img src="img/img-sedona.jpg" width="360" height="580" alt="sedona" class="product-item-img">
                 <div class="product-item-info">
                     <p class="product-item-info-heading">SEDONA</p>
                     <p class="product-item-info-subtitle">Информационный сайт для туристов</p>
@@ -93,7 +93,7 @@
                   <div></div>
                   <div></div>
                 </div>
-                <img src="img/img-pink.png" width="360" height="580" alt="" class="product-item-img">
+                <img src="img/img-pink.jpg" width="360" height="580" alt="pink app" class="product-item-img">
                 <div class="product-item-info">
                     <p class="product-item-info-heading">Pink App</p>
                     <p class="product-item-info-subtitle">Продуктовый лендинг приложения для iOS и Android</p>
@@ -106,7 +106,7 @@
                   <div></div>
                   <div></div>
                 </div>
-                <img src="img/img-barbershop.png" width="360" height="580" alt="" class="product-item-img">
+                <img src="img/img-barbershop.jpg" width="360" height="580" alt="barbershop" class="product-item-img">
                 <div class="product-item-info">
                     <p class="product-item-info-heading">Barbershop</p>
                     <p class="product-item-info-subtitle">Сайт салона красоты. Для мужчин, да.</p>
@@ -119,7 +119,7 @@
                   <div></div>
                   <div></div>
                 </div>
-                <img src="img/img-mishka.png" width="360" height="580" alt="" class="product-item-img">
+                <img src="img/img-mishka.jpg" width="360" height="580" alt="mishka" class="product-item-img">
                 <div class="product-item-info">
                     <p class="product-item-info-heading">MISHKA</p>
                     <p class="product-item-info-subtitle">Интернет-магазин вязаных игрушек</p>
@@ -132,7 +132,7 @@
                   <div></div>
                   <div></div>
                 </div>
-                <img src="img/img-aplus.png" width="360" height="580" alt="" class="product-item-img">
+                <img src="img/img-aplus.jpg" width="360" height="580" alt="a plus" class="product-item-img">
                 <div class="product-item-info">
                     <p class="product-item-info-heading">A Plus</p>
                     <p class="product-item-info-subtitle">Лендинг курсов повышения квалификации</p>
@@ -145,7 +145,7 @@
                   <div></div>
                   <div></div>
                 </div>
-                <img src="img/img-kvast.png" width="360" height="580" alt="" class="product-item-img">
+                <img src="img/img-kvast.jpg" width="360" height="580" alt="квас" class="product-item-img">
                 <div class="product-item-info">
                     <p class="product-item-info-heading">КВАСТ</p>
                     <p class="product-item-info-subtitle">Промо-сайт производителя крафтового кваса</p>
@@ -166,11 +166,11 @@
       <div class="information">
         <p class="location-heading">NЁRDS DESIGN STUDIO</p>
         <p class="location">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> 
-        <p class="phone-numbers">тел. +7 (812) 275-75-75</p> 
+        <a href="tel:+7(812)275-75-75" class="phone-numbers">тел. +7 (812) 275-75-75</a><br>
         <button class="location-but">НАПИШИТЕ НАМ</button>
       </div>
       <div class="pop-up-write-us pop-up-write-us-noactive">
-        <button href="#" class="write-us-colose"></button>
+        <button class="write-us-colose"></button>
         <p class="write-us-heading">Напишите нам</p>
         <form action="#" class="write-us-form">
           <div class="write-us-box">
@@ -192,9 +192,9 @@
     </main>
     <footer class="footer">
       <div class="social-networks">
-        <a href="#" class="social-networks-item"><img src="img/vk.svg" alt="vk"></a>
-        <a href="#" class="social-networks-item"><img src="img/facebook.svg" alt="facebook"></a>
-        <a href="#" class="social-networks-item"><img src="img/instagram.svg" alt="instagram"></a>
+        <a href="#" class="social-networks-item"><img src="img/vk.svg" width="27" height="15" alt="vk"></a>
+        <a href="#" class="social-networks-item"><img src="img/facebook.svg" width="12" height="21" alt="facebook"></a>
+        <a href="#" class="social-networks-item"><img src="img/instagram.svg" width="21" height="21" alt="instagram"></a>
       </div>
       <div class="footer-text">
         <p class="footer-heading">Давайте дружить, это выгодно!</p>
